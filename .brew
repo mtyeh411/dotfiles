@@ -23,22 +23,49 @@ brew install wget --enable-iri
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
+# util
 brew install ack
-brew install git
+brew install ffind
+brew install tree
+brew install rename
+brew install webkit2png
+brew install zopfli
+brew install pigz
+brew install bash-completion
+
+# lib
 brew install libtool
 brew install libxml2
 brew install libxslt
 brew install libyaml
-brew install bash-completion
-brew install tree
-brew install zopfli
-brew install pigz
-brew install rename
-brew install webkit2png
 
+# dev
+brew install git
 brew install postgresql
 brew install redis
 brew install node
+
+# productivity
+brew install todo-txt
+
+# applications
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+brew cask install dropbox
+brew cask install adium
+brew cask install vlc
+brew cask install evernote
+brew cask install the-unarchiver
+brew cask install google-chrome
+brew cask install utorrent
+brew cask install virtualbox
+brew cask install spotify
+brew cask install spotifree
+brew cask install f-lux
+brew cask install openoffice
+brew cask install join-me
+brew cask install gimp
 
 # remove outdated versions from the Cellar
 brew cleanup
