@@ -1,0 +1,11 @@
+[user]
+	name = Matt Yeh
+	email = dev.mtyeh411@gmail.com
+[include]
+  path = ~/.gitconfig.local
+[core]
+	editor = /usr/bin/vim
+[format]
+  pretty = fuller # more detail for `git show`
+[color]
+  ui = true

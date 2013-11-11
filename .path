@@ -1,0 +1,8 @@
+﻿# rvm path
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# todo.txt path
+export PATH="$PATH:/usr/local/todo.txt_cli"
+
+# npm path
+export PATH="$PATH:/usr/local/share/npm/bin"
