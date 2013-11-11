@@ -1,6 +1,9 @@
 ﻿# rvm
 curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enable
 
+# pow
+curl get.pow.cx | sh
+
 # homebrew
 ruby -e "$(curl -fsSkL https://raw.github.com/mxcl/homebrew/go)"
 

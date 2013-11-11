@@ -1,0 +1,45 @@
+﻿#!/bin/bash
+
+# use latest Homebrew
+brew update
+
+# upgrade any already-installed formulae
+brew upgrade
+
+# update GNU core utilities
+brew install coreutils
+echo "Don't forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
+
+# install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install findutils
+
+# install Bash 4
+brew install bash
+
+# install wget with IRI support
+brew install wget --enable-iri
+
+# install more recent versions of some OS X tools
+brew tap homebrew/dupes
+brew install homebrew/dupes/grep
+
+brew install ack
+brew install git
+brew install libtool
+brew install libxml2
+brew install libxslt
+brew install libyaml
+brew install bash-completion
+brew install tree
+brew install zopfli
+brew install pigz
+brew install rename
+brew install webkit2png
+
+brew install postgresql
+brew install redis
+brew install node
+
+# remove outdated versions from the Cellar
+brew cleanup
+
