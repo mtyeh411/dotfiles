@@ -1,8 +1,16 @@
-﻿# rvm path
-export PATH="$PATH:$HOME/.rvm/bin"
+﻿#!/bin/bash
 
-# todo.txt path
-export PATH="$PATH:/usr/local/todo.txt_cli"
+# rvm
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# nvm
+export NVM_DIR="~/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # npm path
 export PATH="$PATH:/usr/local/share/npm/bin"
+
+# node path
+export NODE_PATH='/usr/local/lib/node:/usr/local/lib/node/lib/node_modules:/usr/local/lib/node_modules:/usr/local/lib/node/bin'
+export PATH=$PATH:$NODE_PATH

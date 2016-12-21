@@ -1,8 +1,17 @@
-﻿# todo.txt
-alias t="todo.sh"
+#!/bin/bash
+
+alias vi="vim"
 
 # navigation
 alias ..="cd .."
+alias ...="../.."
+alias l="ls -loh"
+alias ll="ls -lohA"
+alias mkdir="mkdir -p"
+alias gr="grep"
+
+# tmux
+alias tat="tmux attach -t `basename $PWD`"
 
 # colorize `ls`
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -10,5 +19,17 @@ if ls --color > /dev/null 2>&1; then # GNU `ls`
 else # OSX `ls`
   colorflag="-G"
 fi
-alias ls ="command ls ${colorflag}"
+#alias ls ="command ls ${colorflag}"
 
+alias g="git"
+__git_complete g _git
+alias pr="hub pull-request"
+
+alias r="rails"
+alias rk="rake"
+alias tenv="RAILS_ENV=test"
+
+alias b="bundle"
+alias bx="bundle exec"
+
+alias ports="netstat -atp tcp | grep -i listen"
