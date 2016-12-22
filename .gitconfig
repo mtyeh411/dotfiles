@@ -4,8 +4,34 @@
 [include]
   path = ~/.gitconfig.local
 [core]
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
 [format]
   pretty = fuller # more detail for `git show`
 [color]
   ui = true
+[github]
+	user = mtyeh411
+[merge]
+	tool = meld
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[alias]
+  aliases = "!git config -l | grep alias | cut -c 7-"
+  co = checkout
+  c = commit
+  d = diff
+  dc = diff --cached
+  st = status
+  p = push
+  force = push --force
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ls = "!git log --oneline --decorate | head -n 10"
+  lsa = log --oneline --decorate
+  lg = log --graph --oneline --decorate --all
+  gr = grep
+  amend = commit --amend
+  sort = branch --sort=-committerdate
