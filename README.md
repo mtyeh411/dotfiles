@@ -7,5 +7,5 @@ To update later on, just run `sync.sh` again.
 
 ## Manual installs
 * `install-deps.sh`
-* `.osx`
+* `.macos`
 * `.brew`
