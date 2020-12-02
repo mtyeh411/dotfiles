@@ -33,5 +33,6 @@
   lsa = log --oneline --decorate
   lg = log --graph --oneline --decorate --all
   gr = grep
-  amend = commit --amend
+  amend = commit --amend --no-edit
   sort = branch --sort=-committerdate
+  cp = cherry-pick

@@ -1,5 +1,3 @@
-#!/bin/bash
-
 alias vi="vim"
 
 # navigation
@@ -9,9 +7,6 @@ alias l="ls -loh"
 alias ll="ls -lohA"
 alias mkdir="mkdir -p"
 alias gr="grep"
-
-# tmux
-alias tat="tmux attach -t `basename $PWD`"
 
 # colorize `ls`
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -25,11 +20,17 @@ alias g="git"
 __git_complete g _git
 alias pr="hub pull-request"
 
-alias r="rails"
-alias rk="rake"
+alias r="bundle exec rails"
+alias rk="bundle exec rake"
 alias tenv="RAILS_ENV=test"
 
 alias b="bundle"
 alias bx="bundle exec"
 
 alias ports="netstat -atp tcp | grep -i listen"
+
+alias ms="mux s"
+alias mo="mux o"
+
+alias cat="bat"
+alias gitgc='git branch --merged| egrep -v "(^\*|master|release/*)" | xargs git branch -d'
