@@ -8,155 +8,63 @@ brew upgrade
 
 echo "Don't forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 
-# install more recent versions of some OS X tools
-brew tap homebrew/dupes
-brew install homebrew/dupes/grep
+# rando clean up (from old syncs)
+brew untap homebrew/homebrew-versions
+brew untap homebrew/homebrew-dupes
 
 brew install git
-brew install postgresql
-brew install redis
-brew install node
 brew install ack
-brew install ant
-brew install atk
-brew install autoconf
-brew install automake
 brew install bash
 brew install bash-completion
-brew install cairo
-brew install cloog-ppl015
-brew install codeclimate
 brew install coreutils
-brew install czmq
 brew install docker
-brew install elasticsearch
-brew install elixir
-brew install eot-utils
-brew install erlang
 brew install ffind
-brew install ffmpeg
 brew install findutils
-brew install fontconfig
-brew install fontforge
-brew install freetype
-brew install gdbm
-brew install gdk-pixbuf
-brew install gettext
-brew install giflib
-brew install gifsicle
 brew install git
 brew install git-lfs
-brew install glib
-brew install gmp
-brew install gmp4
-brew install gnome-icon-theme
-brew install gobject-introspection
-brew install graphviz
 brew install grep
-brew install gsettings-desktop-schemas
-brew install gtk+3
-brew install gtksourceview3
-brew install harfbuzz
-brew install hicolor-icon-theme
+brew install screen
 brew install hub
-brew install icu4c
-brew install imagemagick
-brew install jpeg
-brew install jpegoptim
-brew install lame
-brew install libepoxy
-brew install libevent
-brew install libffi
-brew install libgpg-error
-brew install libiconv
-brew install libidn
-brew install libksba
-brew install libmpc08
-brew install libpng
-brew install libsodium
-brew install libspiro
-brew install libtiff
 brew install libtool
-brew install libvo-aacenc
 brew install libxml2
 brew install libxslt
 brew install libyaml
-brew install llvm
 brew install meld
-brew install memcached
-brew install mpfr2
-brew install mysql
-brew install nginx
-brew install nginx-full
 brew install nmap
-brew install node
 brew install openssl
-brew install ossp-uuid
-brew install pango
-brew install pcre
-brew install perl
-brew install pigz
-brew install pixman
-brew install pkg-config
-brew install postgresql
-brew install ppl011
-brew install py2cairo
-brew install pygobject3
-brew install python
-brew install qt5
-brew install readline
-brew install redis
 brew install rename
-brew install ruby
-brew install sphinx
-brew install sqlite
 brew install the_silver_searcher
 brew install tmux
-brew install todo-txt
 brew install tree
-brew install unixodbc
 brew install vim
 brew install webkit2png
-brew install wget --enable-iri
-brew install wxmac
-brew install x264
-brew install xvid
-brew install xz
-brew install zeromq
+brew install wget #--enable-iri
 brew install zopfli
+brew install bat
+brew install dos2unix
 
 # cask
-brew tap phinze/homebrew-cask
-brew install brew-cask
+brew tap homebrew/cask
+brew install brew-cask-completion
 
-brew cask install atom
-brew cask install bee
-brew cask install cheatsheet
-brew cask install docker
-brew cask install dropbox
-brew cask install evernote
-brew cask install firefox
-brew cask install flux
-brew cask install gimp
-brew cask install google-chrome
-brew cask install plex-media-server
-brew cask install postman
-brew cask install rescuetime
-#brew cask install selfcontrol
-brew cask install skitch
-brew cask install skype
-brew cask install slack
-brew cask install spectacle
-brew cask install spotifree
-brew cask install spotify
-brew cask install the-unarchiver
-brew cask install tunnelblick
-brew cask install utorrent
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install vlc
-#brew cask install openoffice
+brew install --cask cheatsheet
+brew install --cask docker
+brew install --cask docker-compose
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask postman
+brew install --cask selfcontrol
+brew install --cask skitch
+brew install --cask slack
+brew install --cask spectacle
+brew install --cask spotifree
+brew install --cask spotify
+brew install --cask the-unarchiver
+brew install --cask utorrent
+brew install --cask vlc
+brew install --cask libreoffice
+#brew install --cask plex-media-server
+#brew install --cask gimp
 
 # remove outdated versions from the Cellar
 brew cleanup
-
