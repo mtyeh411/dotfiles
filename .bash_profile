@@ -15,4 +15,6 @@ export PATH="/usr/local/bin:$PATH"
 
 ulimit -n 2048
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# https://github.com/iridakos/goto
+source ~/.bin/goto.bash
+echo -e "\$include /etc/inputrc\nset colored-completion-prefix on" >> ~/.inputrc
