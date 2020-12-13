@@ -63,6 +63,7 @@ brew install --cask the-unarchiver
 brew install --cask utorrent
 brew install --cask vlc
 brew install --cask libreoffice
+brew install --cask aerial
 #brew install --cask plex-media-server
 #brew install --cask gimp
 
