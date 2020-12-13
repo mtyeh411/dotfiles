@@ -5,6 +5,8 @@
 
 To update later on, just run `sync.sh` again.
 
+This set up is for bash shell.  Default shell for MacOS needs to be set first: `chsh -s /bin/bash`
+
 ## Manual installs
 * `install-deps.sh`
 * `.macos`
